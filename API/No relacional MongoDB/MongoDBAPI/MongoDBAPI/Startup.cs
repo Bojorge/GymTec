@@ -6,6 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using MongoDBAPI.ConnectionDB;
+using MongoDBAPI.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +29,14 @@ namespace MongoDBAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.Configure<ClientStoreSettings>(
+                Configuration.GetSection(nameof(ClientStoreSettings)));
+
+            services.AddSingleton<IClientStoreSettings>(sp => 
+            sp.GetRequiredService<IOptions<ClientStoreSettings>>().Value);
+
+            services.AddSingleton<ClientService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
