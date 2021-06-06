@@ -1,0 +1,29 @@
+<div class="wrapper fadeInDown zero-raduis">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../assets/LogoClient.png" id="icon" alt="User Icon" />
+      </div>
+
+      <!-- Login Form -->
+      <form #logUser="ngForm" (ngSubmit)="validate(email.value,password.value)" role="form">
+        <!--<input type="text" id="email" class="fadeIn second zero-raduis" name="email" [(ngModel)]="user.email" placeholder="email">-->
+        <input type="text" name="email" #email ngModel placeholder="correo" class="fadeIn second zero-raduis" autofocus>
+
+        <!--<input type="text" id="password" class="fadeIn third zero-raduis" name="password" [(ngModel)]="user.password" placeholder="password">-->
+        <input type="text" name="password" #password ngModel placeholder="contraseña" class="fadeIn second zero-raduis" autofocus>
+
+          <div id="formFooter">
+            <a class="underlineHover" href="#">¿olvidó su contraseña?</a>
+        </div>
+        <input type="submit" class="fadeIn fourth zero-raduis" value="entrar">
+        <h2>- Registro para nuevos clientes -</h2>
+        <input type="button" (click)="register()" class="fadeIn fourth zero-raduis pc" value="registrarse">
+      </form>
+      
+
+    </div>
+</div>
+
