@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "FK5XyBrAofFJfCn0SvKQASEg7mzaEJTHg1g2LFG70Isc/x4rcLy25sB5UrkA/ZM7272sjVng9nsTxjfNjPoRXQ==",
+  "dgSpecHash": "sjc6a1hrwu0paTNpt6j/d2ePCKWMH1/Ww6IGzonNuLeoxzXSKNx4647W490/YIvD7T9RbCM9J42vMoDVXd8eZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bojorge\\Documents\\BasesDeDatos\\Proyectos\\GymTec\\GymTec\\API\\No relacional MongoDB\\MongoDBAPI\\MongoDBAPI\\MongoDBAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bojorge\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\Bojorge\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\Bojorge\\.nuget\\packages\\mongodb.bson\\2.12.3\\mongodb.bson.2.12.3.nupkg.sha512",
-    "C:\\Users\\Bojorge\\.nuget\\packages\\mongodb.driver\\2.12.3\\mongodb.driver.2.12.3.nupkg.sha512",
-    "C:\\Users\\Bojorge\\.nuget\\packages\\mongodb.driver.core\\2.12.3\\mongodb.driver.core.2.12.3.nupkg.sha512",
+    "C:\\Users\\Bojorge\\.nuget\\packages\\mongodb.bson\\2.12.4\\mongodb.bson.2.12.4.nupkg.sha512",
+    "C:\\Users\\Bojorge\\.nuget\\packages\\mongodb.driver\\2.12.4\\mongodb.driver.2.12.4.nupkg.sha512",
+    "C:\\Users\\Bojorge\\.nuget\\packages\\mongodb.driver.core\\2.12.4\\mongodb.driver.core.2.12.4.nupkg.sha512",
     "C:\\Users\\Bojorge\\.nuget\\packages\\mongodb.libmongocrypt\\1.2.1\\mongodb.libmongocrypt.1.2.1.nupkg.sha512",
     "C:\\Users\\Bojorge\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
     "C:\\Users\\Bojorge\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

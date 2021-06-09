@@ -1,0 +1,104 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!------ Formulario para el registro de un nuevo usuario ---------->
+<div class="container">
+            <form #regUser="ngForm"  (ngSubmit)="saveUser(regUser.value)" class="form-horizontal" role="form" >
+                <h2>Registro</h2>
+                <div class="form-group">
+                    <label for="cedula" class="col-sm-3 control-label">Cedula</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="cedula" ngModel placeholder="cedula" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="correo" class="col-sm-3 control-label">Correo</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="correo" ngModel placeholder="correo" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena" class="col-sm-3 control-label">Contraseña </label>
+                    <div class="col-sm-9">
+                        <input type="password" name="contrasena" ngModel placeholder="contraseña" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmar" class="col-sm-3 control-label">Confirmar contraseña</label>
+                    <div class="col-sm-9">
+                        <input type="password" name="confirmar" ngModel placeholder="confirmar" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nombre" class="col-sm-3 control-label">Nombre</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="nombre" ngModel placeholder="nombre" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="apellido1" class="col-sm-3 control-label">Apellido 1</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="apellido1" ngModel placeholder="apellido 1" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="apellido2" class="col-sm-3 control-label">Apellido 2</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="apellido2" ngModel placeholder="Apellido 2" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="provincia" class="col-sm-3 control-label">Provincia</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="provincia" ngModel placeholder="provincia" class="form-control">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="canton" class="col-sm-3 control-label">Canton</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="canton" ngModel placeholder="canton" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="distrito" class="col-sm-3 control-label">Distrito</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="distrito" ngModel placeholder="distrito" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_nacimiento" class="col-sm-3 control-label">Fecha de nacimiento</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="fecha_nacimiento" ngModel placeholder="fecha de nacimiento" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="edad" class="col-sm-3 control-label">Edad</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="edad" ngModel placeholder="edad" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="peso" class="col-sm-3 control-label">Peso</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="peso" ngModel placeholder="peso" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="imc" class="col-sm-3 control-label">Indice de masa corporal</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="imc" ngModel placeholder="imc" class="form-control">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+

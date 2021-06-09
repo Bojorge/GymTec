@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { ActivitiesComponent } from './pages/activities/activities.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'}, //componente inicial (se redirecciona al login)
-  { path:'login', component:LoginComponent}
+  { path:'login', component:LoginComponent},
+  { path:'register', component:RegisterComponent},
+  { path:'activities', component:ActivitiesComponent}
 ];
 
 @NgModule({
@@ -12,4 +16,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[LoginComponent]
+export const routingComponents=[LoginComponent, RegisterComponent, ActivitiesComponent]
