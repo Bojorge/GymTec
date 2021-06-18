@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace SQLServerAPI.Models
 {
-    public class Telefono
+    public class Prueba
     {
         [Key]
-        public string sucursal { get; set; }
-        public string telefono { get; set; }
+        public int serie { get; set; }
+        public string com { get; set; }
     }
 }

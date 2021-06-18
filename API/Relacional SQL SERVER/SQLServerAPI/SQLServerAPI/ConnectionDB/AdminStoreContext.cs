@@ -14,8 +14,16 @@ namespace SQLServerAPI.ConnectionDB
         {
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=tcp:admingymtec-server.database.windows.net,1433;Initial Catalog=admingymtec;Persist Security Info=False;User ID=Bojorge;Password=@nimal35;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        }
+
+        public DbSet<Prueba> Prueba { get; set; }
+
+        
         public DbSet<Tipo_Equipo> Tipo_Equipo { get; set; }
-        public DbSet<Maquina> Maquina { get; set; }
+        public DbSet<Maquina> Maquina { get; set; } 
         public DbSet<Tipo_Planilla> Tipo_Planilla { get; set; }
         public DbSet<Rol> Rol { get; set; }
         public DbSet<Sucursal> Sucursal { get; set; }
@@ -24,5 +32,6 @@ namespace SQLServerAPI.ConnectionDB
         public DbSet<Clase> Clase { get; set; }
         public DbSet<Producto> Producto { get; set; }
         public DbSet<Tratamiento_Spa> Tratamiento_Spa { get; set; }
+        
     }
 }

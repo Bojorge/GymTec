@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SQLServerAPI.ConnectionDB;
+using SQLServerAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,35 +14,24 @@ namespace SQLServerAPI.Controllers
     public class xController : ControllerBase
     {
 
+        private readonly AdminStoreContext context;
+        public xController(AdminStoreContext context)
+        {
+            this.context = context;
+        }
+
         [HttpGet]
-        public string Get()
+        public IEnumerable<Prueba> Get()
         {
-            return "es correcto mi estimado";
-
+            return context.Prueba.ToList();
         }
 
-        [HttpGet("{h}")]
-        public string Get(int h)
+        [HttpGet("{id}")]
+        public Prueba GetById(int id)
         {
-            return h switch
-            {
-                1 => "Esveme",
-                2 => "ak7",
-                _ => throw new NotSupportedException("el numero no es valido")
-            };
-
+            var prueba = context.Prueba.FirstOrDefault(m => m.serie == id);
+            return prueba;
         }
 
-        public string Post(humano saico)
-        {
-            return saico.nombre + " >>> lo volviste a lograr lml";
-        }
-    }
-
-
-    public class humano
-    {
-        public string cerebros { get; set; }
-        public string nombre { get; set; }
     }
 }

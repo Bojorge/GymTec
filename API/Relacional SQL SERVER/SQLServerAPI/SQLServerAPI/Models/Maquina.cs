@@ -9,10 +9,11 @@ namespace SQLServerAPI.Models
     public class Maquina
     {
         [Key]
-        public string serie { get; set; }
-        public string sucursal { get; set; }
-        public string descripcion { get; set; }
+        public int serie { get; set; }
+        public string descripcion{ get; set; }
         public string marca { get; set; }
-        public string costo { get; set; }
+        public int costo { get; set; }
+        public string sucursal { get; set; }
+        public int tipo { get; set; }
     }
 }

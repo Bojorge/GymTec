@@ -26,7 +26,7 @@ namespace SQLServerAPI.Controllers
         }
 
         [HttpGet ("{id}")]
-        public Maquina Get(string id)
+        public Maquina GetById(int id)
         {
             var maquina = context.Maquina.FirstOrDefault(m => m.serie == id);
             return maquina;

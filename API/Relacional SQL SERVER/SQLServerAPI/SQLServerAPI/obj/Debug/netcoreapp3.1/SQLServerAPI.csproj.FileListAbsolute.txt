@@ -24,7 +24,6 @@ C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional S
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
@@ -45,6 +44,17 @@ C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional S
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\obj\Debug\netcoreapp3.1\SQLServerAPI.csproj.AssemblyReference.cache
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\obj\Debug\netcoreapp3.1\SQLServerAPI.csproj.CopyComplete
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\ADO.Net.Client.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\ADO.Net.Client.Annotations.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\ADO.Net.Client.Core.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\ADO.Net.Client.Implementation.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -56,6 +66,3 @@ C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional S
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\obj\Debug\netcoreapp3.1\SQLServerAPI.csproj.AssemblyReference.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Proyectos\GymTec\GymTec\API\Relacional SQL SERVER\SQLServerAPI\SQLServerAPI\obj\Debug\netcoreapp3.1\SQLServerAPI.csproj.CopyComplete
