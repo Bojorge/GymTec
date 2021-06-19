@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   //el constructor recibe como parametros una instacia del servicio que se comunica con el API y un Router para poder redireccionar paginas entre si mismas
   constructor(private ls:LoginService, private router:Router) {
-    this.ls.vaciarEspacio() 
+    //this.ls.vaciarEspacio() 
    }
 
   ngOnInit(): void { }
@@ -29,8 +29,10 @@ export class LoginComponent implements OnInit {
   //este metodo recibe un objeto a validar, cuyo 2 atributos son usuario y contraseña
   public validate(validar: Validar)
   {    
+    this.router.navigate(['/recepcion']);
+    /*
     this.ls.vaciarEspacio() 
-    //emplea un metodo del mismo nombre que proviene del servicio que hace el post para enviar el obtejo y recibir un valor booleano
+    //emplea un metodo del mismo nombre que proviene del Login service
     this.ls.validate(validar).subscribe((acceso: Boolean)=> {
       if(acceso==true){ //si la respuesta es verdadera va a la siguiente pagina dependiendo del rol
         this.ls.usuarioLogeado().subscribe((user: Colaborador)=> {
@@ -40,14 +42,8 @@ export class LoginComponent implements OnInit {
           else if(user.rol==1767){
             this.router.navigate(['/productos']); //redirecciona a la pagina de productos
           }
-          else if(user.rol==1692){
-            this.router.navigate(['/spinning']); //redirecciona a la pagina de spinning
-          }
           else if(user.rol==1347){
             this.router.navigate(['/recepcion']); //redirecciona a la pagina de recepcion
-          }
-          else if(user.rol==1795){
-            this.router.navigate(['/rutinas']); //redirecciona a la pagina de rutinas
           }
         })
 
@@ -55,8 +51,10 @@ export class LoginComponent implements OnInit {
       else{ //si es falso hará una advertencia
         console.log("no tiene acceso, debe registrarse")
       }
-      console.log(acceso) //imprime en consola el valor booleano de la variable acceso
+      console.log(acceso) //imprime en consola el valor booleano de la variable acceso para pruebas
     });
+
+    */
   }
 
 }

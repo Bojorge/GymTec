@@ -71,6 +71,9 @@ values (105460096, 'vanillaninja@gmail.com', 'ninjavanilla', 'Kattia', 'Quesada'
 
 -- insersion de colaboradores en el gym 1
 
+-- este cuenta con los  permisos de administrador dado por el rol 2222
+insert into colaborador (cedula,correo,contrasena,nombre,apellido1,apellido2,provincia,canton,distrito,rol,sucursal)
+values (304440643,'mbojorge@estudiantec.cr','2016093626','Manuel','Bojorge','Araya','Cartago','El Guarco','San Isidro',2222,'Gym1')
 
 insert into COLABORADOR (cedula, correo, contrasena, nombre, apellido1, apellido2, provincia, canton, distrito, rol, sucursal)
 values (304390821, 'childrenofbodom@gmail.com', 'bodomofchildren', 'Adriana', 'Jimenez', 'Suarez', 'Cartago', 'El Guarco', 'Guadalupe', 1795, 'Gym1')

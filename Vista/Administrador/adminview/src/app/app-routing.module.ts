@@ -5,8 +5,13 @@ import { RegisterComponent } from './pages/register/register.component';
 import { GeneralsettingsComponent } from './pages/generalsettings/generalsettings.component';
 import { RecepcionComponent } from './pages/recepcion/recepcion.component';
 import { ProductosComponent } from './pages/productos/productos.component';
-import { RutinasComponent } from './pages/rutinas/rutinas.component';
-import { SpinningComponent } from './pages/spinning/spinning.component';
+import { SucursalesComponent } from './pages/sucursales/sucursales.component';
+import { PuestosplanillaComponent } from './pages/puestosplanilla/puestosplanilla.component';
+import { EmpleadosComponent } from './pages/empleados/empleados.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { CrearclaseComponent } from './pages/crearclase/crearclase.component';
+import { EquipoComponent } from './pages/equipo/equipo.component';
+import { CalendarioComponent } from './pages/calendario/calendario.component';
 
 //rutas de las paginas
 const routes: Routes = [
@@ -16,8 +21,13 @@ const routes: Routes = [
   { path:'generalsettings', component:GeneralsettingsComponent},
   { path:'recepcion', component:RecepcionComponent},
   { path:'productos', component:ProductosComponent},
-  { path:'rutinas', component:RutinasComponent},
-  { path:'spinning', component:SpinningComponent}
+  { path:'sucursales', component:SucursalesComponent},
+  { path:'puestosplanilla', component:PuestosplanillaComponent},
+  { path:'empleados', component:EmpleadosComponent},
+  { path:'servicios', component:ServiciosComponent},
+  { path:'equipo', component:EquipoComponent},
+  { path:'crearclase', component:CrearclaseComponent},
+  { path:'calendario', component:CalendarioComponent}
 ];
 
 @NgModule({
@@ -28,4 +38,5 @@ export class AppRoutingModule { }
 
 //se exportan los componentes para que se puedan redireccionar
 export const routingComponents=[LoginComponent,RegisterComponent, GeneralsettingsComponent,
-RecepcionComponent, ProductosComponent, RutinasComponent, SpinningComponent]
+RecepcionComponent, ProductosComponent, SucursalesComponent, PuestosplanillaComponent, EmpleadosComponent,
+ServiciosComponent, EquipoComponent, CrearclaseComponent, CalendarioComponent]
