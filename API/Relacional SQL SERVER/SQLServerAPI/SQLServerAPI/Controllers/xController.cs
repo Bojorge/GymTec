@@ -21,17 +21,9 @@ namespace SQLServerAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Prueba> Get()
+        public string Get()
         {
-            return context.Prueba.ToList();
+            return "Admin API";
         }
-
-        [HttpGet("{id}")]
-        public Prueba GetById(int id)
-        {
-            var prueba = context.Prueba.FirstOrDefault(m => m.serie == id);
-            return prueba;
-        }
-
     }
 }

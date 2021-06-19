@@ -46,8 +46,6 @@ namespace SQLServerAPI.Controllers
             {
                 return BadRequest();
             }
-            
-            
         }
 
 

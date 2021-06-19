@@ -89,7 +89,26 @@ create table TRATAMIENTO_SPA (
 	rol int
 );
 
+create table USUARIOLOGEADO (
+	cedula int primary key,
+	correo varchar(50),
+	contrasena varchar(50),
+	nombre varchar(20),
+	apellido1 varchar(20),
+	apellido2 varchar(20),
+	provincia varchar(20),
+	canton varchar(20),
+	distrito varchar(20),
+	rol int,
+	sucursal varchar(20)
+);
+
+
 -- asignacion de llaves foraneas ------------------------------------------------------------------
+
+alter table USUARIOLOGEADO
+	add foreign key (rol) references ROL(codigo),
+		foreign key (sucursal) references SUCURSAL(nombre)
 
 alter table MAQUINA
 	add foreign key (tipo) references TIPO_EQUIPO(codigo),

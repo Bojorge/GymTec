@@ -8,6 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './pages/register/register.component';
 import { GeneralsettingsComponent } from './pages/generalsettings/generalsettings.component';
+import { ProductosComponent } from './pages/productos/productos.component';
+import { SpinningComponent } from './pages/spinning/spinning.component';
+import { RecepcionComponent } from './pages/recepcion/recepcion.component';
+import { RutinasComponent } from './pages/rutinas/rutinas.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { GeneralsettingsComponent } from './pages/generalsettings/generalsetting
     LoginComponent,
     ServicesComponent,
     RegisterComponent,
-    GeneralsettingsComponent
+    GeneralsettingsComponent,
+    ProductosComponent,
+    SpinningComponent,
+    RecepcionComponent,
+    RutinasComponent
   ],
   imports: [
     BrowserModule,
