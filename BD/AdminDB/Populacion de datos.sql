@@ -45,13 +45,16 @@ values (1767, 'vender y cobrar productos', 2004 )
 -- insersion de sucursales
 
 insert into SUCURSAL (nombre, provincia, canton, distrito, fecha_apertura, capacidad, horario, administrador)
-values ('Gym1', 'Cartago', 'Central', 'Oriental', '01-08-14', 100,'5am-9pm / L-S', null)
+values ('Gym4', 'Alajuela', 'Alajuela', 'Sabanilla', ''02-10-17', 100,'4am-11pm / 7', 708390822)
 
 insert into SUCURSAL (nombre, provincia, canton, distrito, fecha_apertura, capacidad, horario, administrador)
-values ('Gym2', 'San Jose', 'Montes de Oca', 'San Pedro', '06-12-16', 200,'24/7', null)
+values ('Gym1', 'Cartago', 'Central', 'Oriental', '01-08-14', 100,'5am-9pm / L-S', 304440643)
 
 insert into SUCURSAL (nombre, provincia, canton, distrito, fecha_apertura, capacidad, horario, administrador)
-values ('Gym3', 'Limon', 'Siquirres', 'Pacuarito', '09-03-18', 80,'10am-10pm  / 7', null)
+values ('Gym2', 'San Jose', 'Montes de Oca', 'San Pedro', '06-12-16', 200,'24/7', 304440643)
+
+insert into SUCURSAL (nombre, provincia, canton, distrito, fecha_apertura, capacidad, horario, administrador)
+values ('Gym3', 'Limon', 'Siquirres', 'Pacuarito', '09-03-18', 80,'10am-10pm  / 7', 304440643)
 
 
 -- insersion de colaboradores en el gym 2			
@@ -87,6 +90,10 @@ values (309460926, 'walkingthedemon@gmail.com', 'demonthewalking', 'Andrea', 'Ra
 insert into COLABORADOR (cedula, correo, contrasena, nombre, apellido1, apellido2, provincia, canton, distrito, rol, sucursal)
 values (305380197, 'dreamtheater@gmail.com', 'theaterdream', 'Oscar', 'Lopez', 'Escalante', 'Cartago', 'Paraiso', 'Cachi', 1767, 'Gym1')
 
+-- administrador de las 3 sucursales
+update sucursal
+set administrador=304440643
+where administrador is null
 
 -- insersion de colaboradores en el gym 3
 

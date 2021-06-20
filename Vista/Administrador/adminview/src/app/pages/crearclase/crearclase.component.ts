@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Clase } from 'src/app/models/Clase';
+import { RecepcionService } from 'src/app/services/recepcion/recepcion.service';
 
 @Component({
   selector: 'app-crearclase',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrearclaseComponent implements OnInit {
 
-  constructor() { }
+  clases: Clase[];
+  
+
+  constructor(private rs: RecepcionService) { 
+    this.clases=[]
+  }
 
   ngOnInit(): void {
+    this.rs.allclases().subscribe((cls: Clase[]) => {
+      this.clases=cls
+    });
+  }
+
+  crearclase(clase: Clase){
+    this.rs.newclase(clase).subscribe();
   }
 
 }

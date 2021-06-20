@@ -1,1 +1,27 @@
-<p>calendario works!</p>
+<h2 class="text-center">Todas las clases</h2>
+<div class="panel-body">
+    <table class="table table-striped table-over">
+        <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Costo</th>
+            <th>Fecha</th>
+            <th>Hora inicio</th>
+            <th>Hora fin</th>
+            <th>Tipo de clase</th>
+            <th>instructor</th>
+            <th>rol</th>
+        </tr>
+        <tr *ngFor="let row of clases">
+            <td>{{row.codigo}}</td>
+            <td>{{row.nombre}}</td>
+            <td>{{row.costo}}</td>
+            <td>{{row.fecha}}</td>
+            <td>{{row.hora_inicio}}</td>
+            <td>{{row.hora_fin}}</td>
+            <td>{{row.tipo_clase}}</td>
+            <td>{{row.instructor}}</td>
+            <td>{{row.rol}}</td>
+        </tr>
+    </table>
+</div>

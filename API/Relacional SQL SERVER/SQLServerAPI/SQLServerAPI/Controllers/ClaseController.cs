@@ -12,33 +12,33 @@ namespace SQLServerAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ColaboradorController : ControllerBase
+    public class ClaseController : ControllerBase
     {
         private readonly AdminStoreContext context;
-        public ColaboradorController(AdminStoreContext context)
+        public ClaseController(AdminStoreContext context)
         {
             this.context = context;
         }
 
         [HttpGet]
-        public IEnumerable<Colaborador> Get()
+        public IEnumerable<Clase> Get()
         {
-            return context.Colaborador.ToList();
+            return context.Clase.ToList();
         }
 
         [HttpGet("{id}")]
-        public Colaborador GetById(int id)
+        public Clase GetById(int codigo)
         {
-            var colaborador = context.Colaborador.FirstOrDefault(c => c.cedula == id);
-            return colaborador;
+            var clase = context.Clase.FirstOrDefault(c => c.codigo == codigo);
+            return clase;
         }
 
         [HttpPost]
-        public ActionResult Create(Colaborador colaborador)
+        public ActionResult Create(Clase clase)
         {
             try
             {
-                context.Colaborador.Add(colaborador);
+                context.Clase.Add(clase);
                 context.SaveChanges();
                 return Ok();
             }
@@ -51,11 +51,11 @@ namespace SQLServerAPI.Controllers
 
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, Colaborador colaborador)
+        public IActionResult Update(int codigo, Clase clase)
         {
-          if (colaborador.cedula == id)
+            if (clase.codigo == codigo)
             {
-                context.Entry(colaborador).State = EntityState.Modified;
+                context.Entry(clase).State = EntityState.Modified;
                 context.SaveChanges();
                 return Ok();
             }
@@ -66,12 +66,13 @@ namespace SQLServerAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteById(int id)
+        public IActionResult DeleteById(int codigo)
         {
-            var colaborador = context.Colaborador.FirstOrDefault(c => c.cedula == id);
-            if(colaborador != null)
+       
+            var clase = context.Clase.FirstOrDefault(c => c.codigo == codigo);
+            if (clase != null)
             {
-                context.Colaborador.Remove(colaborador);
+                context.Clase.Remove(clase);
                 context.SaveChanges();
                 return Ok();
             }
@@ -80,7 +81,5 @@ namespace SQLServerAPI.Controllers
                 return BadRequest();
             }
         }
-
-
     }
 }
