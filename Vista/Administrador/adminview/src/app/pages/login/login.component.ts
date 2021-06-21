@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   //el constructor recibe como parametros una instacia del servicio que se comunica con el API y un Router para poder redireccionar paginas entre si mismas
   constructor(private ls:LoginService, private router:Router) {
-    //this.ls.vaciarEspacio() //saca de la base de datos los datos de usuarios logeados
+    this.ls.vaciarEspacio() //saca de la base de datos los datos de usuarios logeados
    }
 
   ngOnInit(): void { }
@@ -28,9 +28,7 @@ export class LoginComponent implements OnInit {
 
   //este metodo recibe un objeto a validar, cuyo 2 atributos son usuario y contraseña
   public validate(validar: Validar)
-  {      
-    this.router.navigate(['/generalsettings']); 
-    /*
+  {   
     this.ls.vaciarEspacio() //saca de la base de datos los datos de usuarios logeados
     //emplea un metodo del mismo nombre que proviene del Login service
     this.ls.validate(validar).subscribe((acceso: Boolean)=> {
@@ -53,7 +51,7 @@ export class LoginComponent implements OnInit {
       }
       console.log(acceso) //imprime en consola el valor booleano de la variable acceso para pruebas
     });
-    */
+    
   }
 
 }
